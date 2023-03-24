@@ -1,0 +1,46 @@
+@use '../../styles/colors';
+@use '../../styles/spacing';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: spacing.$spacing-50;
+  padding: spacing.$spacing-100;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: spacing.$spacing-100;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 375px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+
+.image {
+  width: spacing.$spacing-200;
+  height: spacing.$spacing-200;
+}
+
+.h1 {
+  font-size: spacing.$font-lg;
+  font-weight: bold;
+  color: colors.$orange;
+  padding-bottom: spacing.$spacing-25;
+}
+
+.name {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: spacing.$spacing-10;
+}

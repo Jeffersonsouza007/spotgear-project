@@ -1,0 +1,94 @@
+// Definindo variáveis para as cores do botão
+$button-bg-color: #FF5722;
+$button-text-color: #FFFFFF;
+
+// Definindo estilos para o botão
+.buttonCreate {
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  
+  // Efeito hover do botão
+  &:hover {
+    background-color: lighten($button-bg-color, 10%);
+  }
+}
+.buttonConfirm {
+  background-color: green;
+  color: $button-text-color;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  
+  // Efeito hover do botão
+  &:hover {
+    background-color: lighten($button-bg-color, 10%);
+  }
+}
+.buttonCancel {
+  background-color: black;
+  color: $button-text-color;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  
+  // Efeito hover do botão
+  &:hover {
+    background-color: lighten($button-bg-color, 10%);
+  }
+}
+.cadastroProduto {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .inputGroup {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+
+    label {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    input {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      width: 100%;
+      font-size: 16px;
+    }
+
+      &:focus {
+        outline: none;
+        border-color: white
+      }
+    }
+  }
